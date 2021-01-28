@@ -46,6 +46,12 @@ ggplot(data = billboard, aes(y = date.entered, x= artist))+
   geom_col(aes(fill= track), show.legend= FALSE)+
   theme_minimal()+
   labs(title= "billboard top 100 in year 2000")
+# =======
+ggplot(data = cars, aes(x=dist, y=speed))+
+  geom_boxplot()+
+  geom_jitter(color = "salmon")+
+  theme_minimal()+
+  labs(title= "speed and distance to stop of cars")
 
 ```
 
