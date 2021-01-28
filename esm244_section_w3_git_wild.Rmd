@@ -42,6 +42,11 @@ ggplot(data = diamonds, aes(x = depth, y = carat)) +
 
 ```{r break-it-2}
 
+ggplot(data = billboard, aes(y = date.entered, x= artist))+
+  geom_col(aes(fill= track), show.legend= FALSE)+
+  theme_minimal()+
+  labs(title= "billboard top 100 in year 2000")
+
 ```
 
 ## END Discussion 3
