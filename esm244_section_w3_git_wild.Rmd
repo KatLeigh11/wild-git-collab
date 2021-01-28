@@ -36,8 +36,9 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 
 ```{r break-it-1}
 ggplot(data = diamonds, aes(x = depth, y = carat)) +
-  geom_point() +
-  theme_void()
+  geom_area(aes(color= cut)) +
+  theme_dark()+
+  labs(subtitle = "Kat2 is here!")
 ```
 
 ```{r break-it-2}
