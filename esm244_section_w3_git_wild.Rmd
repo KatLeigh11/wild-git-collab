@@ -42,6 +42,12 @@ ggplot(data = diamonds, aes(x = depth, y = carat)) +
 
 ```{r break-it-2}
 
+ggplot(data = cars, aes(x=dist, y=speed))+
+  geom_boxplot()+
+  geom_jitter(color = "salmon")+
+  theme_minimal()+
+  labs(title= "speed and distance to stop of cars")
+
 ```
 
 ## END Discussion 3
